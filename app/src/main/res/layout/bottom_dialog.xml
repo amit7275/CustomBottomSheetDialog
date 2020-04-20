@@ -13,25 +13,28 @@
         android:background="@android:color/white">
 
         <TextView
+            android:id="@+id/txtJava"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="first"
+            android:text="Hello Java"
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="10dp"/>
 
         <TextView
+            android:id="@+id/txtAndroid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="first"
+            android:text="Hello Android"
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="10dp"/>
 
         <TextView
+            android:id="@+id/txtWorld"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="first"
+            android:text="Hello world"
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="10dp"/>
@@ -41,12 +44,12 @@
 
 
     <Button
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="second"
+        android:text="Submit"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/layout"
-
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
 

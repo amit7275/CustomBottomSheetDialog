@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FilterBottomfragment filterBottomFragment = new FilterBottomfragment();
+                //set filterBottomFragment.setCancelable(true) if you want to cancel on touch out side;
+                filterBottomFragment.setCancelable(true);
                 //filterBottomFragment.setFilterTagClickListener(this);
                 filterBottomFragment.setCancelable(true);
                 filterBottomFragment.show(getSupportFragmentManager(), filterBottomFragment.getTag());
