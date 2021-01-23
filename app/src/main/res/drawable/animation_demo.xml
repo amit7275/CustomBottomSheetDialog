@@ -1,0 +1,8 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/menu_icon_profile" android:duration="400" />
+    <item android:drawable="@drawable/back" android:duration="400" />
+    <item android:drawable="@drawable/menu_icon_profile" android:duration="400" />
+
+
+</animation-list>

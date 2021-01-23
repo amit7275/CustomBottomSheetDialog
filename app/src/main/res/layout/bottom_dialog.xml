@@ -3,6 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
+
+    <include layout="@layout/test_bottom_layout"
+        android:id="@+id/bottom_layout_test"
+        />
+
     <LinearLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
@@ -10,7 +16,8 @@
         android:orientation="vertical"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/txtJava"
@@ -49,8 +56,9 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/layout"
+        android:layout_below="@+id/bottom_layout_test"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
 
 </RelativeLayout>

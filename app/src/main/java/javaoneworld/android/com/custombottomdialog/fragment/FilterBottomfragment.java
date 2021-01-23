@@ -1,10 +1,12 @@
 package javaoneworld.android.com.custombottomdialog.fragment;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,7 +30,9 @@ public class FilterBottomfragment extends BottomSheetDialogFragment implements V
     private Context mContext;
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
 
         //inflate your custom layout in place of bottom_dialog
       View view=inflater.inflate(R.layout.bottom_dialog,container,false);
@@ -57,6 +61,18 @@ public class FilterBottomfragment extends BottomSheetDialogFragment implements V
     public void onAttach(Context context) {
         mContext = (FragmentActivity) context;
         super.onAttach(context);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        /*if (getDialog() != null && getDialog().getWindow() != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Window window = getDialog().getWindow();
+            window.findViewById(com.google.android.material.R.id.container).setFitsSystemWindows(false);
+            // dark navigation bar icons
+            View decorView = window.getDecorView();
+            decorView.setSystemUiVisibility(decorView.getSystemUiVisibility() | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+        }*/
     }
 
     @Override
